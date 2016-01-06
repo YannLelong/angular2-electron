@@ -1,0 +1,27 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Electron App",
+			"type": "node",
+			"request": "launch",
+			"program": "main.js",
+			"stopOnEntry": false,
+			"args": [],
+			"cwd": ".",
+			"runtimeExecutable": "node_modules/electron-prebuilt/dist/electron",
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"env": {}
+		},
+		{
+			"name": "Attach to VSCode",
+			"type": "chrome",
+			"request": "attach",
+			"port": 9222,
+			"sourceMaps": true,
+			"outDir": "out"
+		}
+	]
+}
